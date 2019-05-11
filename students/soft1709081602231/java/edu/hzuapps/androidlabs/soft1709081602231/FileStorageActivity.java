@@ -13,14 +13,13 @@ import java.io.FileOutputStream;
 
 public class FileStorageActivity extends AppCompatActivity {
     private EditText editText;
-    private Button save;
-    private Button read;
+    private Button save,read;
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.file_storage_activity);
-        editText=(EditText)findViewById(R.id.editText);
-        save=(Button)findViewById(R.id.save);
-        read=(Button)findViewById(R.id.read);
+        editText=findViewById(R.id.editText);
+        save=findViewById(R.id.save);
+        read=findViewById(R.id.read);
         save.setOnClickListener(new ButtonListener());
         read.setOnClickListener(new ButtonListener());
     }
