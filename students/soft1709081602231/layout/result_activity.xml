@@ -4,54 +4,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/a7"
     tools:context=".ResultActivity">
 
     <TextView
         android:id="@+id/jieguo"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="结果" />
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_centerVertical="true"
-        android:scaleType="fitCenter" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp">
-
-        <Button
-            android:id="@+id/bg1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="图片1" />
-
-        <Button
-            android:id="@+id/bg2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/bg1"
-            android:text="图片2" />
-
-        <Button
-            android:id="@+id/bg3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="图片3" />
-    </LinearLayout>
+        android:text="结果" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#10000000"
+        android:textColor="@color/colorPrimaryDark"
         android:text="@string/again" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#10000000"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="查看更多熊本熊照片"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom= "true"
+        android:background="#10000000"
+        android:textColor="@color/colorPrimaryDark"
         android:text="@string/home" />
 
 </LinearLayout>

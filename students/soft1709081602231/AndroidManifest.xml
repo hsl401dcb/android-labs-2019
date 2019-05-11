@@ -23,6 +23,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".FileStorageActivity" />
+        <activity android:name=".PictureActivity" />
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="@drawable/a1"
 tools:context=".FileStorageActivity">
 
     <TextView
@@ -12,16 +13,23 @@ tools:context=".FileStorageActivity">
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:textSize="20dp"
-        android:text="请输入您要存储的信息:"/>
+        android:text="游戏规则:"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="石头剪子布，是一种猜拳游戏，它在各地经常有其独特称呼，如香港亦叫作“猜呈寻”。规则是：石头打剪刀，布包石头，剪刀剪布。"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="-10dp"
         android:ems="10">
         <requestFocus />
     </EditText>
@@ -32,7 +40,8 @@ tools:context=".FileStorageActivity">
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText"
-        android:text="保存信息"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:text="修改"/>
 
     <Button
         android:id="@+id/read"
@@ -41,6 +50,15 @@ tools:context=".FileStorageActivity">
         android:layout_below="@+id/editText"
         android:layout_alignRight="@+id/editText"
         android:layout_marginTop="-1dp"
-        android:text="读取信息" />
+        android:textColor="@color/colorPrimaryDark"
+        android:text="查看" />
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom= "true"
+        android:background="#10000000"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/home"/>
 
 </RelativeLayout>

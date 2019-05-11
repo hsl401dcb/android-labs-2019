@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 if (diannao > user) {
-                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "电脑：" + p[diannao] + "\n你输了！");
+                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "熊本熊：" + p[diannao] + "\no(╥﹏╥)o你输了！");
                 } else if (diannao == user) {
-                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "电脑：" + p[diannao] + "\n平局");
+                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "熊本熊：" + p[diannao] + "\n(⊙o⊙)…平局");
                 } else if (diannao < user) {
-                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "电脑：" + p[diannao] + "\n你赢了！");
+                    intent.putExtra("result", "玩家:" + userchoose + "	vs	" + "熊本熊：" + p[diannao] + "\n(*^▽^*)你赢了！");
                 }
                 startActivity(intent);
             }

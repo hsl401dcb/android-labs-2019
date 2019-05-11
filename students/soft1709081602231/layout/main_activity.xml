@@ -4,6 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@drawable/a6"
     tools:context=".MainActivity">
 
     <RadioGroup
@@ -39,5 +40,7 @@
         android:id="@+id/choose"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#3F99CC32"
+        android:textColor="@color/colorPrimaryDark"
         android:text="出拳" />
 </LinearLayout>
